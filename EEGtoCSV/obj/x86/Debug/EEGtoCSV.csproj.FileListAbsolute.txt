@@ -8,3 +8,13 @@ C:\Users\Bradley Trowbridge\Desktop\MedValue Test\HelloEEG\bin\Debug\Jayrock.Jso
 C:\Users\Bradley Trowbridge\Desktop\MedValue Test\HelloEEG\bin\Debug\NLog.dll
 C:\Users\Bradley Trowbridge\Desktop\MedValue Test\HelloEEG\bin\Debug\NLog.xml
 C:\Users\Bradley Trowbridge\Desktop\MedValue Test\HelloEEG\obj\x86\Debug\EEGtoCSV.csprojResolveAssemblyReference.cache
+C:\Users\Bradley Trowbridge\Desktop\MedValue Test\EEGtoCSV\bin\Debug\ConsoleApplication.exe.config
+C:\Users\Bradley Trowbridge\Desktop\MedValue Test\EEGtoCSV\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\Bradley Trowbridge\Desktop\MedValue Test\EEGtoCSV\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\Bradley Trowbridge\Desktop\MedValue Test\EEGtoCSV\bin\Debug\ConsoleApplication.exe
+C:\Users\Bradley Trowbridge\Desktop\MedValue Test\EEGtoCSV\bin\Debug\ConsoleApplication.pdb
+C:\Users\Bradley Trowbridge\Desktop\MedValue Test\EEGtoCSV\bin\Debug\ThinkGear.dll
+C:\Users\Bradley Trowbridge\Desktop\MedValue Test\EEGtoCSV\bin\Debug\Jayrock.Json.dll
+C:\Users\Bradley Trowbridge\Desktop\MedValue Test\EEGtoCSV\bin\Debug\NLog.dll
+C:\Users\Bradley Trowbridge\Desktop\MedValue Test\EEGtoCSV\bin\Debug\NLog.xml
+C:\Users\Bradley Trowbridge\Desktop\MedValue Test\EEGtoCSV\obj\x86\Debug\EEGtoCSV.csprojResolveAssemblyReference.cache

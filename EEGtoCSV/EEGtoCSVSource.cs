@@ -74,12 +74,15 @@ namespace testprogram {
             Console.WriteLine("Validating: ");
 
         }
-
+        public static String GetTimestamp(DateTime value)
+        {
+            return value.ToString("yyyyMMddHHmmssffff");
+        }
 
         // Called when data is received from a device
 
         static void OnDataReceived(object sender, EventArgs e) {
-            
+
             var csv = new StringBuilder();
 
             Device d = (Device)sender;
@@ -126,16 +129,22 @@ namespace testprogram {
                 if (tgParser.ParsedData[i].ContainsKey("Meditation")) {
 
                     //prints meditaion values
-                    var medValue = tgParser.ParsedData[i]["Time"];
+                    var medValue = tgParser.ParsedData[i]["Meditation"];
                     Console.WriteLine("Med Value:" + medValue);
 
                     //prints time stamp
-                    var timeStamp = tgParser.ParsedData[i]["Time"];
+
+                    //version 1 from parser
+                    //var timeStamp = tgParser.ParsedData[i]["Time"];
+                    //Console.WriteLine("Time:" + timeStamp);
+
+                    //version 2 from system
+                    String timeStamp = GetTimestamp(DateTime.Now);
                     Console.WriteLine("Time:" + timeStamp);
 
                     //Creates CSV line of data
-                    var newLine = string.Format("{0},{1}{2}", medValue, timeStamp);
-                    csv.Append(newLine);
+                    var newLine = string.Format("{0},{1}\n", medValue, timeStamp);
+                    File.AppendAllText(@"C:\Users\Bradley Trowbridge\Desktop\MedValue Test\EEGoutputTest.csv", newLine.ToString());
                 }
 
                 /*
@@ -152,7 +161,7 @@ namespace testprogram {
 
                 }
                 */
-            File.AppendAllText(@"C:\Users\Bradley Trowbridge\Desktop\MedValue Test\EEG output Test.csv", csv.ToString());
+            
 
             }
 
